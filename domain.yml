@@ -1,0 +1,129 @@
+version: '3.1'
+intents:
+- bot_challenge
+- chitchat
+- dont_need_assistance
+- describe_symptoms
+- feel_sick
+- goodbye
+- greet
+- thanks
+- how_to_get_started
+- inquire_about_disease
+- inquire_about_disease_symptoms
+- inquire_about_disease_treatment
+- specify_disease
+- covid_precautions
+- covid_spread_air
+- covid_age_risk
+- covid_time
+- covid_spreading
+- covid_vitamins
+- covid_about_sanitizer
+- covid_about_mask
+- covid_about_vaccine
+- covid_testing
+- covid_immunity_booster
+- covid_immunity_booster_foods
+- covid_community
+- covid_infected_person
+
+entities:
+- disease
+
+slots:
+  disease:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: disease
+  symptoms_info:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_intent
+      value: symptoms
+      intent: inquire_about_disease_symptoms
+  treatment_info:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_intent
+      value: treatment
+      intent: inquire_about_disease_treatment
+
+actions:
+- action_provide_disease_info
+- utter_ask_disease
+- utter_greet
+- utter_iamabot
+- utter_goodbye
+- utter_dont_need_assistance
+- utter_feel_sick
+- utter_how_to_get_started
+- utter_medical_focus
+- utter_covid_precautions
+- utter_covid_spreading
+- utter_covid_age_risk
+- utter_covid_time
+- utter_covid_vitamins
+- utter_covid_sanitizer
+- utter_covid_about_vaccine
+- utter_covid_about_mask
+- utter_covid_testing
+- utter_covid_immunity_booster
+- utter_covid_immunity_booster_foods
+
+responses:
+  utter_greet:
+  - text: Hello! How can I assist you today?
+  utter_goodbye:
+  - text: Goodbye! Take care.
+  - text: Thanks for using me
+  utter_dont_need_assistance:
+  - text: No problem. If you have any questions, feel free to ask.
+  utter_thanks:
+  - text: You are welcome. Glad I could be of some help!
+  utter_feel_sick:
+  - text: I'm sorry to hear that you're not feeling well. While I can provide you with medical information and guidance, I must emphasize that I cannot provide a diagnosis. It's always best to consult with a healthcare professional for a proper evaluation and diagnosis. Do you have any particular questions about specific diseases or their signs and symptoms?
+  - text: I understand it's frustrating when you're not feeling your best. As a chatbot, my role is to provide you with medical information and support. However, please keep in mind that I cannot diagnose your condition. It's advisable to consult a healthcare professional who can assess your symptoms accurately. Do you have any specific queries regarding a particular disease or its symptoms?
+  utter_how_to_get_started:
+  - text: To get started, you can simply ask me any health-related questions or describe any symptoms you are experiencing.
+  utter_iamabot:
+  - text: I am an AI-powered chatbot designed to assist you with health-related queries. Please feel free to ask me about a specific disease, its symptoms or possible treatments. I can also give you details regarding COVID-19.
+  utter_medical_focus:
+  - text: I'm sorry, but the only information I can provide is medical. Please feel free to ask any questions you may have regarding various diseases or COVID-19-related queries. I'm here to assist!
+  utter_ask_disease:
+  - text: What disease are you interested in?
+  utter_covid_precautions:
+  - text: Stay home if you feel unwell and seek medical attention if necessary. Use soap and water or an alcohol-based hand sanitizer, wear a mask, cover your nose and mouth when coughing or sneezing, and stay away from others.
+  utter_covid_spreading:
+  - text: The coronavirus spreads through respiratory droplets, such as coughs and sneezes, which can reach up to 6 feet away. To reduce the risk of spread, it is recommended to keep distance and wear masks in public.
+  utter_covid_age_risk:
+  - text: People aged 60+ and with underlying medical conditions are at higher risk of developing serious illness. However, anyone can get sick with COVID-19 and become seriously ill or die at any age.
+  utter_covid_time:
+  - text: The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can range from 1-14 days. People who have been exposed to the virus are advised to stay home and away from others for 14 days to prevent the spread of the virus.
+  utter_covid_vitamins:
+  - text: A balanced diet containing vitamins A, B, C, D, E, and K, as well as micronutrients like sodium, zinc, potassium, chloride, calcium, and phosphorus, can help maintain wellbeing and strengthen the immune system, reducing infections.
+  utter_covid_sanitizer:
+  - text: Hand sanitizers are effective in reducing the number and type of microbes, especially when soap and water are not available. Alcohol-based sanitizers are recommended.
+  utter_covid_about_vaccine:
+  - text: There are several COVID-19 vaccines authorized or approved by regulatory agencies. These include Pfizer-BioNTech, Moderna, Oxford-AstraZeneca, Johnson & Johnson (Janssen), Sinovac, and Sinopharm. It is important to refer to official sources and consult local health authorities for the most up-to-date and accurate information regarding COVID-19 vaccines.
+  utter_covid_about_mask:
+  - text: Wearing a mask is essential to protect against the spread of coronavirus, especially in crowded outdoor settings and close contact with others. /nWHO and UNICEF advise that the decision to use masks for children aged 6-11 should be based on factors such as widespread transmission, child safety, access to masks, and adult supervision. /nChildren aged 5 years and under should not be required to wear masks.
+  utter_covid_testing:
+  - text: Covid-19 testing can identify the SARS-CoV-2 virus (virus responsible for COVID-19) and includes methods that detect the presence of virus itself (RT-PCR and isothermal nucleic acid amplification) and those that detect antibodies produced in response to infection.
+  - text: COVID-19 testing differs by location. If you have symptoms of COVID-19 and want to get tested, call your medical provider first. You can also visit your state or health department’s website to look for the latest local information on testing. While supplies of these tests are increasing, it may still be difficult to find a place to get tested.
+  utter_covid_immunity_booster:
+  - text: Maintaining a healthy diet, sleep, hydration, exercise, and stress reduction are important measures to improve immunity.
+  utter_covid_immunity_booster_foods:
+  - text: Low carb diets help control high blood sugar and pressure, slow down diabetes, and focus on a protein-rich diet. Eat vegetables and fruits rich in Beta carotene, Ascorbic acid, and other essential vitamins. Supplements rich in omega 3 & 6 fatty acids, herbs, seeds and nuts, and probiotics are also good sources. Increase the intake of turmeric, cumin, coriander, garlic and herbal tea.
+  utter_covid_community:
+  - text: Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Each health department determines community spread differently based on local conditions. For information on community spread in your area, please visit your health department’s website.
+  utter_covid_infected_person:
+  - text: Stay home for 14 days after your last contact with a person who has COVID-19.\nBe alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.\nIf possible, stay away from others, especially people who are at higher risk for getting very sick from COVID-19.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
