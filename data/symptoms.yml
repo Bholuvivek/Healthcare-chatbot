@@ -1,0 +1,203 @@
+version: '3.1'
+nlu:
+- lookup: symotoms
+  examples: |
+    - abdominal cramps
+    - abdominal pain
+    - abdominal pain and bloating
+    - abdominal pain and cramping
+    - abdominal pain and swelling
+    - abdominal pain or discomfort
+    - abdominal swelling and pain
+    - abnormal menstruation
+    - acidity
+    - anemia
+    - back pain
+    - backache
+    - blackheads
+    - bloating
+    - bloody stool
+    - blurred and distorted vision
+    - blurred or dimmed vision
+    - blurred or double vision
+    - blurred vision
+    - blurry vision
+    - body aches
+    - bone pain
+    - breathlessness
+    - bruising
+    - burning micturition
+    - burning sensation during urination
+    - chest discomfort
+    - chest pain
+    - chest pain or discomfort
+    - chest tightness
+    - chills
+    - chronic cough
+    - coma
+    - confusion
+    - congestion
+    - constipation
+    - constipation or diarrhea
+    - continuous sneezing
+    - convulsions
+    - cough
+    - coughing
+    - coughing up blood
+    - cysts
+    - dark urine
+    - dehydration
+    - depression
+    - diarrhea
+    - diarrhea or constipation
+    - diarrhoea
+    - difficulty breathing
+    - difficulty concentrating
+    - difficulty seeing at night
+    - difficulty sleeping
+    - difficulty speaking or swallowing
+    - difficulty starting or stopping urination
+    - difficulty swallowing
+    - difficulty walking
+    - difficulty with coordination and balance
+    - digestive problems
+    - discharge from the eyes
+    - dizziness
+    - double vision
+    - dry cough
+    - ear pain
+    - encephalitis
+    - enlarged liver or spleen
+    - enlarged lymph nodes
+    - excessive bleeding
+    - excessive daytime sleepiness
+    - excessive hunger
+    - family history
+    - fast heart rate
+    - fatigue
+    - fatigue and weakness
+    - fever
+    - fever and fatigue
+    - frequent changes in eyeglass or contact lens prescription
+    - frequent infections
+    - frequent respiratory infections
+    - frequent urination
+    - hair loss
+    - headache
+    - headaches
+    - heart palpitations
+    - heartburn
+    - high blood pressure
+    - high fever
+    - increased appetite
+    - indigestion
+    - iron-deficiency anemia
+    - irregular heartbeat
+    - irregular periods
+    - irritability
+    - itching
+    - jaundice
+    - jaundice (yellowing of the skin and eyes)
+    - joint pain
+    - joint pain and stiffness
+    - joint pain and swelling
+    - lack of energy
+    - leg pain
+    - lethargy
+    - limited range of motion
+    - loss of appetite
+    - loss of appetite and weight loss
+    - loss of balance
+    - loss of consciousness
+    - malaise
+    - memory loss
+    - mild fever
+    - mood changes
+    - mood swings
+    - mucus production
+    - muscle aches
+    - muscle and joint pain
+    - muscle pain
+    - muscle stiffness
+    - muscle weakness
+    - nasal discharge
+    - nausea
+    - nausea and vomiting
+    - nausea or vomiting
+    - neck pain
+    - night sweats
+    - nodules
+    - nosebleeds
+    - numbness or tingling in the legs or feet
+    - obesity
+    - pain
+    - pain and tenderness in the affected area
+    - pain behind the eyes
+    - pain during bowel movements
+    - pain during sex
+    - pain during sexual intercourse
+    - pain in the lower right side of the abdomen
+    - pain or discomfort
+    - painful urination
+    - painful walking
+    - pale skin
+    - paralysis
+    - pelvic pain
+    - persistent cough
+    - personality changes
+    - phlegm
+    - pimples
+    - pneumonia
+    - rapid or irregular heartbeat
+    - rash
+    - rectal bleeding
+    - red eyes
+    - red spots over body
+    - redness
+    - restlessness
+    - ringing in the ears
+    - runny nose
+    - runny or stuffy nose
+    - seizures
+    - sensitivity to light
+    - severe headache
+    - shortness of breath
+    - shortness of breath, especially during physical activities
+    - skin lesions
+    - skin peeling
+    - skin rash
+    - skin rashes
+    - sleep problems
+    - slurred speech
+    - small, raised bumps on the skin
+    - snoring
+    - sore throat
+    - stiff neck
+    - stomach cramps
+    - stomach pain
+    - sweating
+    - sweats
+    - swelled lymph nodes
+    - swelling
+    - swelling and redness around the joint
+    - swelling in the legs or feet
+    - swelling in the legs, ankles, or feet
+    - swelling joints
+    - swelling of the eyelids
+    - swollen glands
+    - swollen lymph nodes
+    - tremors
+    - unexplained weight loss
+    - unintended weight loss
+    - urgent bowel movements
+    - vomiting
+    - weakness
+    - weakness and fatigue
+    - weakness or numbness in limbs
+    - weakness or numbness on one side of the body
+    - weight gain
+    - weight loss
+    - wheezing
+    - whiteheads
+    - yellowing of eyes
+    - yellowish skin

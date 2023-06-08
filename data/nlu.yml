@@ -1,0 +1,221 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+    - Hi
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: dont_need_assistance
+  examples: |
+    - i don't need your help
+    - that's not helpfull
+    - I don't think so
+    - don't like that
+    - i don't need your assistance
+    - you are stupid
+    - I don't have any questions
+    - i don't wanna talk
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot
+    - thank you so much
+- intent: feel_sick
+  examples: |
+    - I'm not feeling well.
+    - I feel sick.
+    - I have been feeling unwell lately.
+    - Something doesn't feel right with my body.
+    - I think I might be coming down with something.
+    - My health hasn't been great recently.
+    - I'm experiencing some discomfort in my body.
+    - I'm feeling under the weather.
+    - I have some medical issues. Can you help?
+- intent: describe_symptoms
+  examples: |
+    - I have a headache and nausea.
+    - I'm experiencing a headache and feeling nauseous.
+    - I feel tired and fatigued all the time.
+    - I'm constantly tired and experiencing fatigue.
+    - My body is experiencing discomfort and aches.
+    - I feel uncomfortable and have body aches.
+    - I have a fever and chills.
+    - I'm running a temperature and experiencing chills.
+    - I'm having difficulty breathing and chest pain.
+    - I can't breathe properly and experiencing chest pain.
+    - I'm coughing continuously and have a sore throat.
+    - I have a persistent cough and my throat is sore.
+    - I have swelling in my legs and feet.
+    - My legs and feet are swollen.
+    - I'm experiencing swelling in my abdomen.
+    - There is swelling in my abdominal area.
+    - I have been having frequent sweats.
+    - I'm sweating excessively.
+    - I'm dealing with persistent nausea and vomiting.
+    - I feel nauseous all the time and have been vomiting.
+    - I feel weakness in my body.
+    - My body feels weak.
+    - I have a stiff neck.
+    - My neck is stiff.
+    - I'm having joint and muscle pain.
+    - My joints and muscles are in pain.
+    - I experience pain during sex.
+    - Sex is painful for me.
+    - I noticed eye lesions.
+    - There are lesions on my eyes.
+    - I feel extreme fatigue all the time.
+    - I'm constantly exhausted and extremely fatigued.
+- intent: inquire_about_disease
+  examples: |
+    - Can you provide information about [diabetes](disease)?
+    - What do you know about [ovarian cancer](disease)?
+    - Tell me about [heart attack](disease).
+    - I'm curious about [leukemia](disease). Can you give me some information?
+    - I want to learn more about [rectal cancer](disease).
+    - Can you explain [hypertension](disease) to me?
+    - I'm interested in knowing about [depression](disease). Could you provide some insights?
+    - What about [influenza](disease)?
+    - What is [covid 19](disease)
+    - what is [corona virus](disease)
+    - What can you tell me about different diseases?
+    - I'm interested in learning about various diseases. Can you provide some information?
+    - Could you give me details about common illnesses?
+    - I want to know more about diseases in general. Can you help?
+    - Can you provide an overview of different disorders?
+    - I'm curious about diseases and their characteristics. Can you share some insights?
+    - I'm looking for general knowledge about sicknesses. Can you guide me?
+    - Can you provide information about diseases?
+    - I want to learn about different diseases.
+    - Tell me about some common health conditions.
+    - I'm curious about various illnesses and disorders.
+    - Can you give me an overview of different medical conditions?
+    - Can you provide information about specific disease?
+- intent: specify_disease
+  examples: |
+    - Can you provide information about [diabetes](disease)?
+    - I'm curious about [candidiasis](disease)
+    - Tell me about [cholera](disease)
+    - What can you tell me about [ptsd](disease)?
+    - Provide information about [stomach cancer](disease)
+    - [esophageal cancer](disease)
+    - [mycobacterium infection](disease)
+    - [ptsd](disease)
+    - [lung cancer](disease)
+    - about [covid19](disease)
+    - about [corona](disease)
+- intent: inquire_about_disease_symptoms
+  examples: |
+    - What are the common symptoms of [diabetes](disease)?
+    - Can you describe the manifestations of [breast cancer](disease)?
+    - What are the clinical signs of [depression](disease)?
+    - I'm experiencing some symptoms. Could it be [Parkinson's disease](disease)?
+    - How does the [ebola virus](disease) manifest itself?
+    - Can you provide information on the clinical features of [Alzheimer's disease](disease)?
+    - What are the common manifestations of [Parkinson's disease](disease)?
+    - I'm curious about the symptoms of [rheumatoid arthritis](disease).
+    - What are the common signs of [prostate cancer](disease)?
+    - Can you describe the symptoms of [thyroid disease](disease)?
+    - symptoms of [covid 19](disease)
+    - Symptoms of [corona virus](disease)
+    - what are the symptoms of [coronavirus](disease)
+    - [covid](disease) symptoms
+    - what are the signs of [covid19](disease)
+    - signs of [covid](disease)
+    - I'd like to know more about diseases and their symptoms.
+    - Can you provide a list of common symptoms across different illnesses?
+    - I'm looking for information on general symptoms of diseases.
+    - What are some common indications that could indicate a health issue?
+    - Tell me about the typical signs of various diseases.
+    - I want to know about the manifestations of different health conditions.
+    - What are the warning signs of underlying diseases?
+- intent: inquire_about_disease_treatment
+  examples: |
+    - Tell me about [arthritis](disease) and its treatment options.
+    - What are the treatment options for [diabetes](disease)?
+    - Can you explain the available treatment for [hernia](disease)?
+    - Tell me about the treatment options for [asthma](disease).
+    - What is the typical treatment for [epilepsy](disease)?
+    - I'm interested in knowing how [hypertension](disease) is treated.
+    - What are the common treatment approaches for [depression](disease)?
+    - Can you explain the available protocols for [ulcerative colitis](disease)?
+    - I want to know how [rheumatoid arthritis](disease) is handled.
+    - What are the treatment options for [migraine](disease)?
+    - home remedies to cure [covid](disease)
+    - how can I treat [corona](disease) at home
+    - what remedies should I follow to treat [covid](disease)?
+    - Can you provide information on general treatments available for different illnesses?
+    - I want to learn about the typical approaches to treat various diseases.
+    - Tell me about the management strategies for different health conditions.
+    - What are the common methods used in the treatment of diseases?
+    - I'm interested in knowing about the available therapeutic options for different ailments.
+    - Can you give me an overview of the medical interventions used for various illnesses?
+    - What are the recommended treatment modalities for specific diseases?
+    - I'd like to know about the standard care practices for different health disorders.
+    - Can you describe the treatment plans followed for various diseases?
+    - How can it be treated?
+    - I want to learn treatment options of a disease. Can you help?
+- intent: how_to_get_started
+  examples: |
+    - How can I get started with this chatbot?
+    - What are the first steps to start using this chatbot?
+    - How do I begin using this application?
+    - Can you guide me on how to get started?
+    - I'm new here, what should I do to begin?
+    - What is the process to start using this chatbot?
+    - Where should I begin with this application?
+    - Can you provide instructions on how to get started?
+    - What are the initial steps to use this chatbot?
+    - I want to get started, what should I do first?
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who am I talking to?
+- intent: chitchat
+  examples: |
+    - Can you tell me a joke?
+    - What's the weather like today?
+    - How old are you?
+    - Do you like sports?
+    - What's your favorite movie?
+    - please help with my ice cream it's dripping
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - I want french cuisine
+    - i am hungry
+    - can i be shown a gluten free restaurant
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - can you help me to build a bot
+    - can i book a taxi?
+    - can i order a pizza?
+    - i want to order a pizza

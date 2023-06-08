@@ -1,0 +1,297 @@
+version: '3.1'
+nlu:
+- lookup: disease
+  examples: |
+    - acne
+    - adenoiditis
+    - aids
+    - alcoholic hepatitis
+    - allergy
+    - alzheimer's disease
+    - amyotrophic lateral sclerosis (als)
+    - anal fissure
+    - anemia
+    - angina pectoris
+    - anthrax
+    - anxiety disorders
+    - aortic stenosis
+    - aortic valve regurgitation
+    - appendicitis
+    - arthritis
+    - asthma
+    - atherosclerosis
+    - autism spectrum disorder
+    - autoimmune disorders
+    - avian influenza
+    - bacterial meningitis
+    - benign prostatic hyperplasia
+    - bipolar disorder
+    - blood clotting disorders
+    - botulism
+    - brain tumors
+    - breast cancer
+    - bronchial asthma
+    - bronchitis
+    - brucellosis
+    - bursitis
+    - campylobacteriosis
+    - candidiasis
+    - cardiomyopathy
+    - carotid artery disease
+    - cataracts
+    - celiac disease
+    - cerebral aneurysm
+    - cerebral palsy
+    - cervical cancer
+    - cervical spondylosis
+    - chagas disease
+    - chicken pox
+    - chickenpox
+    - chlamydia
+    - cholecystitis
+    - cholera
+    - chronic bronchitis
+    - chronic cholestasis
+    - chronic kidney disease
+    - chronic obstructive pulmonary disease
+    - cirrhosis
+    - cirrhosis of the liver
+    - coccidioidomycosis
+    - colitis
+    - colorectal cancer
+    - common cold
+    - congenital heart defects
+    - congestive heart failure
+    - conjunctivitis
+    - coronary artery disease
+    - covid-19
+    - creutzfeldt-jakob disease
+    - crohn's disease
+    - cryptococcosis
+    - cryptosporidiosis
+    - cystic fibrosis
+    - cytomegalovirus infection
+    - deep vein thrombosis
+    - dementia
+    - dengue
+    - dengue fever
+    - dental caries
+    - depression
+    - diabetes
+    - diabetes mellitus
+    - dimorphic hemorrhoids (piles)
+    - diphtheria
+    - diverticulitis
+    - down syndrome
+    - drug reaction
+    - e. coli infection
+    - ebola virus disease
+    - eczema
+    - ehrlichiosis
+    - emphysema
+    - encephalitis
+    - endocarditis
+    - endometriosis
+    - enterovirus infection
+    - epilepsy
+    - erectile dysfunction
+    - erysipelas
+    - escherichia coli o157:h7 infection
+    - esophageal cancer
+    - fibromyalgia
+    - filariasis
+    - fungal infection
+    - gallbladder cancer
+    - gallstones
+    - gastritis
+    - gastroenteritis
+    - gastroesophageal reflux disease
+    - gerd
+    - giardiasis
+    - glaucoma
+    - glomerulonephritis
+    - gonorrhea
+    - gout
+    - graves' disease
+    - group a streptococcal infection
+    - haemophilus influenzae infection
+    - hantavirus pulmonary syndrome
+    - hashimoto's thyroiditis
+    - hearing loss
+    - heart attack
+    - heart failure
+    - helminthiasis
+    - hemophilia
+    - hemorrhoids
+    - hepatitis a
+    - hepatitis b
+    - hepatitis c
+    - hepatitis d
+    - hepatitis e
+    - hernia
+    - herpes zoster
+    - hiatal hernia
+    - high blood pressure (hypertension)
+    - high cholesterol
+    - histoplasmosis
+    - hodgkin's lymphoma
+    - hookworm infection
+    - human papillomavirus infection
+    - huntington's disease
+    - hypertension
+    - hyperthyroidism
+    - hypoglycemia
+    - hypothyroidism
+    - impetigo
+    - infectious mononucleosis
+    - inflammatory bowel disease
+    - influenza
+    - insomnia
+    - interstitial cystitis
+    - intervertebral disc herniation
+    - intestinal obstruction
+    - irritable bowel syndrome
+    - ischemic heart disease
+    - japanese encephalitis
+    - jaundice
+    - juvenile idiopathic arthritis
+    - kawasaki disease
+    - kidney stones
+    - legionellosis
+    - leishmaniasis
+    - leprosy
+    - leptospirosis
+    - leukemia
+    - listeriosis
+    - liver cancer
+    - lou gehrig's disease
+    - lung cancer
+    - lyme disease
+    - lymphoma
+    - macular degeneration
+    - malaria
+    - measles
+    - meningococcal disease
+    - menopause
+    - methicillin-resistant staphylococcus aureus (mrsa) infection
+    - migraine
+    - migraine headaches
+    - mitral stenosis
+    - mitral valve regurgitation
+    - molluscum contagiosum
+    - monkeypox
+    - multiple myeloma
+    - multiple sclerosis
+    - mumps
+    - muscular dystrophy
+    - myasthenia gravis
+    - mycobacterium avium complex infection
+    - mycoplasma pneumonia
+    - myeloma
+    - myocardial infarction
+    - narcolepsy
+    - nasal polyps
+    - necrotizing fasciitis
+    - neonatal tetanus
+    - non-hodgkin's lymphoma
+    - nonalcoholic fatty liver disease (nafld)
+    - norovirus infection
+    - obesity
+    - obsessive-compulsive disorder (ocd)
+    - onchocerciasis
+    - ophthalmia neonatorum
+    - osteoarthristis
+    - osteoarthritis
+    - osteomyelitis
+    - osteoporosis
+    - otitis media
+    - ovarian cancer
+    - paget's disease of bone
+    - pancreatic cancer
+    - paralysis (brain hemorrhage)
+    - paratyphoid fever
+    - parkinson's disease
+    - paroymsal positional vertigo (vertigo)
+    - peptic ulcer diseae
+    - peptic ulcer disease
+    - peripheral arterial disease
+    - peripheral artery disease (pad)
+    - peripheral neuropathy
+    - pertussis
+    - peyronie's disease
+    - pneumococcal disease
+    - pneumonia
+    - poliomyelitis
+    - polycystic kidney disease
+    - polycystic ovary syndrome
+    - post-traumatic stress disorder (ptsd)
+    - primary biliary cirrhosis
+    - primary sclerosing cholangitis
+    - prostate cancer
+    - psoriasis
+    - pulmonary embolism
+    - pulmonary fibrosis
+    - q fever
+    - rabies
+    - raynaud's disease
+    - rectal cancer
+    - renal failure
+    - respiratory syncytial virus infection
+    - restless legs syndrome (rls)
+    - rheumatic fever
+    - rheumatoid arthritis
+    - rift valley fever
+    - rocky mountain spotted fever
+    - rosacea
+    - rotavirus infection
+    - rubella
+    - salmonellosis
+    - sarcoidosis
+    - sars (severe acute respiratory syndrome)
+    - scabies
+    - scarlet fever
+    - sciatica
+    - scleroderma
+    - scoliosis
+    - shigellosis
+    - sickle cell disease
+    - sinusitis
+    - skin cancer
+    - sleep apnea
+    - smallpox
+    - spinal stenosis
+    - spondylitis
+    - staphylococcal scalded skin syndrome
+    - stomach cancer
+    - strep throat
+    - stroke
+    - syphilis
+    - systemic lupus erythematosus
+    - tendinitis
+    - testicular cancer
+    - tetanus
+    - thyroid cancer
+    - thyroid disease
+    - tinnitus
+    - toxoplasmosis
+    - trachoma
+    - tuberculosis
+    - tularemia
+    - typhoid
+    - typhoid fever
+    - typhus
+    - ulcerative colitis
+    - urinary tract infection
+    - urinary tract infection (uti)
+    - uterine cancer
+    - varicella (chickenpox)
+    - varicose veins
+    - venous insufficiency
+    - vertigo
+    - vibrio infection
+    - vitiligo
+    - west nile virus infection
+    - whiplash
+    - wilson's disease
+    - yeast infection
+    - zika virus infection

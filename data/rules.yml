@@ -1,0 +1,41 @@
+version: "3.1"
+
+rules:
+
+- rule: Respond to a greeting at the beginning of a conversation
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond with medical focus for chitchat intent
+  steps:
+  - intent: chitchat
+  - action: utter_medical_focus
+
+- rule: Getting started
+  steps:
+  - intent: how_to_get_started
+  - action: utter_how_to_get_started
+
+- rule: Respond polite
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Feeling sick and describe symptoms
+  steps:
+  - or:
+    - intent: feel_sick
+    - intent: describe_symptoms
+  - action: utter_feel_sick

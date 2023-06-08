@@ -1,0 +1,160 @@
+version: "3.1"
+
+nlu:
+- synonym: covid-19
+  examples: |
+    - sars-cov-2
+    - novel coronavirus
+    - coronavirus disease
+    - coronavirus
+    - covid
+    - covid19
+    - covid 19
+    - wuhan virus
+    - corona
+    - corona virus
+
+- intent: covid_precautions
+  examples: |
+    - how to prevent [corona](disease)
+    - how to prevent [covid19](disease)
+    - precautions for [covid](disease)
+    - precaution for [corona](disease)
+    - [corona](disease) precautions
+    - preventive measures against [covid](disease)
+    - what can I do to protect myself and prevent the spread of [corona](disease)
+    - what can I do to protect myself and prevent the spread of [covid19](disease)
+    - measures to be followed to prevent [covid19(disease)]
+    - measures to be taken to avoid [covid](disease)
+    - protective measures of [corona](disease)
+    - protective measures of [covid19](disease)
+    - preventive measures of [covid19](disease)
+
+- intent: covid_spread_air
+  examples: |
+    - [corona](disease) in air
+    - [covid](disease) from air
+    - is [corona](disease) transmits through air
+    - can virus that causes [COVID-19](disease) be transmitted through the air
+    - can [corona](disease) be transmitted through air
+    - is it possible that [corona](disease) is spreading through air
+    - is it possible that [covid19](disease) is spreading through air
+
+- intent: covid_age_risk
+  examples: |
+    - who is at most risk of [corona](disease)
+    - what age people are more at risk of [covid](disease)
+    - are adult in risk of [covid19](disease)
+    - risk of old people sickness because of [COVID-19](disease)
+    - which age group peoples are at risk from [covid](disease)?
+
+- intent: covid_time
+  examples: |
+    - how long it takes to develop [corona](disease)?
+    - time to see effect of [corona virus](disease)
+
+- intent: covid_spreading
+  examples: |
+    - spred of [corona virus](disease)
+    - spread of [covid-19](disease)
+    - spread of [covid](disease)
+    - how does the [coronavirus](disease) spread?
+    - will warm weather stop the outbreak of [COVID-19](disease)?
+    - [corona](disease) community spread
+    - Spreading of [corona virus](disease)
+    - spread [corona](disease)
+    - spread [covid](disease)
+    - Transmission of [corona](disease)
+    - can mosquitos or ticks spread the virus that causes [COVID-19](disease)?
+
+- intent: covid_vitamins
+  examples: |
+    - which vitamins are useful to avoid [covid](disease)
+    - vitamin C helpful for avoiding [corona](disease)
+    - can Vitamins and Minerals Help Fight [Coronavirus](disease)?
+    - can Vitamin C Prevent and Treat [Coronavirus](disease)?
+    - Vitamins C, D can help prevent [coronavirus](disease)
+    - Can Vitamin C protect from [COVID-19](disease)?
+
+- intent: covid_about_sanitizer
+  examples: |
+    - which type of sanitizer can be used
+    - how many percentage of alcohol should the sanitizer contain
+    - sanitize hands
+    - sanitizer
+    - what type of liquids to be used to kill [coronavirus](disease)
+    - what type of liquids to be used to kill [covid19](disease)
+    - what type of liquids to be used to remove [covid19](disease)
+    - what precautions can be taken to clean hands
+    - is sanitizer useful
+    - will sanitizer removes bacteria
+    - does sanitizing helps to kills virus
+
+- intent: covid_about_mask
+  examples: |
+    - wearing a mask
+    - are mask necessary
+    - about mask
+    - how to wear mask
+    - is wearing mask useful
+    - why masks are required
+    - is mask really necessary to avoid infecting from [corona](disease)
+    - is mask necessary to avoid infecting from [covid19](disease)
+    - masks are useful or not
+
+- intent: covid_about_vaccine
+  examples: |
+    - vaccines for [corona](disease)
+    - are there any vaccine for [covid19](disease)
+    - what is the vaccine for [corona](disease)?
+    - what about vaccine of [covid19](disease)
+    - what about vaccine of [corona virus](disease)
+    - is any vaccine invented for [covid](disease)?
+
+- intent: covid_testing
+  examples: |
+     - are tests available for [covid](disease)?
+     - are there tests to detect [corona](disease)?
+     - can i have a test even if i don't have [covid](disease) symptoms?
+     - can i have a test if i think i have [coronavirus](disease)?
+     - can i have a test for [corona virus](disease)?
+     - how are they testing people for [covid19](disease)?
+     - how can i get tested for [coronavirus](disease)?
+     - how do they test for [covid-19](disease)?
+     - how do they test someone for [covid-19](disease)?
+     - how does testing for [corona](disease) work?
+     - how does testing for [covid](disease) work?
+     - i think i have [coronavirus](disease), should i get a test?
+
+- intent: covid_immunity_booster
+  examples: |
+     - what should i do to boost my immunity?
+     - what are the methods to boost immunity?
+     - how to boost my immunity?
+     - how to minimize the risk of infection?
+
+- intent: covid_immunity_booster_foods
+  examples: |
+     - what all food should i eat to increase my immunty?
+     - what all Supplements and immunity boosting foods should i eat?
+     - how to improve my diet against [covid 19](disease)?
+     - what should i eat when i got [covid 19](disease)?
+     - what all foods should i eat to prevent [covid 19](disease)?
+     - immunity booster foods
+
+- intent: covid_community
+  examples: |
+    - what is community spread?
+    - how does community spread occurs?
+    - community spread
+
+- intent: covid_infected_person
+  examples: |
+    - what should i do if someone in my house gets infected by [corona](disease)?
+    - what should i do if someone in my house gets infected by [covid-19](disease)?
+    - what to do when someone gets [covid-19](disease) i know?
+    - my family member gets infected by [corona](disease)?
+    - someone gets infected by [corona](disease) i know?
+    - someone gets infected by [corona](disease) i was in contact with?
+    - someone gets infected by [covid](disease) i was in contact with?
+    - what to do if someone gets infected by [covid](disease) i was in contact with?

@@ -1,0 +1,93 @@
+version: "3.1"
+
+stories:
+
+- story: Inquire disease info 1
+  steps:
+  - or:
+    - intent: inquire_about_disease
+    - intent: inquire_about_disease_symptoms
+    - intent: inquire_about_disease_treatment
+  - slot_was_set:
+    - disease: null
+  - action: action_provide_disease_info
+  - intent: specify_disease
+  - slot_was_set:
+      - disease:
+  - action: action_provide_disease_info
+
+- story: Inquire disease info 2
+  steps:
+  - or:
+    - intent: inquire_about_disease
+    - intent: inquire_about_disease_symptoms
+    - intent: inquire_about_disease_treatment
+  - slot_was_set:
+    - disease: ovarian cancer
+    - treatment_info: treatment
+    - symptoms_info: symptoms
+  - action: action_provide_disease_info
+
+- story: Precaution and sanitizer
+  steps:
+  - intent: covid_precautions
+  - action: utter_covid_precautions
+  - intent: covid_about_sanitizer
+  - action: utter_covid_sanitizer
+
+- story: Spreading of covid
+  steps:
+  - or:
+    - intent: covid_spread_air
+    - intent: covid_spreading
+  - action: utter_covid_spreading
+
+- story: Covid info 2
+  steps:
+  - intent: covid_age_risk
+  - action: utter_covid_age_risk
+  - intent: covid_time
+  - action: utter_covid_time
+
+- story: About mask and vaccine
+  steps:
+  - intent: covid_about_mask
+  - action: utter_covid_about_mask
+  - intent: covid_about_vaccine
+  - action: utter_covid_about_vaccine
+
+- story: Sanitizer and tratments
+  steps:
+  - intent: covid_vitamins
+  - action: utter_covid_vitamins
+  - intent: inquire_about_disease_treatment
+  - slot_was_set:
+    - disease: covid-19
+    - treatment_info: treatment
+  - action: action_provide_disease_info
+
+- story: Testing corona
+  steps:
+  - intent: covid_testing
+  - action: utter_covid_testing
+
+- story: Immunity_booster_story
+  steps:
+  - intent: covid_immunity_booster
+  - action: utter_covid_immunity_booster
+  - intent: covid_immunity_booster_foods
+  - action: utter_covid_immunity_booster_foods
+
+- story: Corona community spread path
+  steps:
+  - intent: covid_community
+  - action: utter_covid_community
+  - intent: covid_infected_person
+  - action: utter_covid_infected_person
+  - intent: thanks
+  - action: utter_thanks
+
+- story: I don't need your assistance
+  steps:
+  - intent: dont_need_assistance
+  - action: utter_dont_need_assistance
